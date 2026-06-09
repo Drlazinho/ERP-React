@@ -1,85 +1,66 @@
-# Fabrica-v2-remake
+# Fábrica ERP v2 Remake
 
-### ✅ Requisitos | Recomendações
-- Node.js 22.13.0v
-- React 18, React 17
-- Typescript
-- Vite.js
-- NPM
+Uma aplicação web moderna em **React** construída para atuar como portal administrativo (ERP) e painel de inteligência comercial, integrando processos fiscais, comerciais, de pós-venda e suporte técnico.
 
-### Linguagens de programação
-* js - Temporário
-* jsx - Temporário
-* ts 
-* tsx 
+---
 
-### Documentação em desenvolvimento:
-* https://amvox-com.gitbook.io/untitled
+## 🛠️ Stack Tecnológica
 
-<div style="  padding: 20px;
-    margin: 20px 0;
-    border: 1px solid #fffb00 ;
-        background-color: #2e2b12;
-    border-left-width: 6px !important;
-    border-radius: 3px;
-">
-🚧 IMPORTANT : É recomendado que todos os arquivos sejam convertidos para Typescript para melhor desenvolvimento e manuteção.
-</div>
+* **Core:** [React 18](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/) + [Vite](https://vitejs.dev/) (para build rápido e hot-reload)
+* **UI & Estilização:** [Material UI (MUI v6)](https://mui.com/) + Styled Components + Bootstrap (legado)
+* **Gerenciamento de Estado & HTTP:** [Axios](https://axios-http.com/) + [TanStack React Query v5](https://tanstack.com/query/latest)
+* **Formulários e Validações:** React Hook Form + [Zod](https://zod.dev/)
+* **Gráficos & Dashboards:** ApexCharts + Recharts
+* **Utilitários Fiscais:** jsPDF + html2canvas (para geração de notas fiscais em PDF), xml2js
 
-##
+---
 
-### Instalação
-Recomendado:
-````
-npm i
-````
-Caso o comando acima não funcionar, use o comando abaixo
-````
-npm i --legacy-peer-deps
-or
-npm i --force
-````
-<div style="  padding: 20px;
-    margin: 20px 0;
-    border: 1px solid #d9534f;
-    background-color: #2e1312;
-    border-left-width: 6px !important;
-    border-radius: 3px;
-">
- 🚨~ Caso o primeiro comando não funcione, avisa o time de desenvolvimento e deixe em observação as dependências que estão depreciadas e levando ao uso de <code>--force</code> or <code>---legacy-peer-deps</code>
-</div>
+## ⚙️ Variáveis de Ambiente
 
-### Execução
-````
+As chaves de API e URLs de ambiente estão desacopladas do código-fonte por motivos de segurança.
+
+1. Duplique o arquivo `.env.example` e renomeie-o para `.env` ou `.env.development`:
+   ```bash
+   cp .env.example .env.development
+   ```
+2. Preencha as URLs de cada serviço nos locais correspondentes:
+   * **APIs de Integração:** `VITE_API_FABRICA`, `VITE_API_FACTORY`, `VITE_API_INTELIGENCIA`, etc.
+   * **Credenciais de Terceiros:** `VITE_INVERTEXTO_TOKEN` (geração de código de barras).
+
+---
+
+## 🚀 Como Iniciar o Projeto
+
+### 1. Instalação das Dependências
+Para instalar as dependências, execute:
+```bash
+npm install
+```
+*Caso ocorra algum conflito de dependências antigas em fase de depreciação, utilize:*
+```bash
+npm install --legacy-peer-deps
+```
+
+### 2. Executar em Desenvolvimento
+```bash
 npm run dev
-````
-### Build | Test Build
-````
-1. npm run build
-````
-Após o sucesso da build é aconselhável executar o comando abaixo para verificar a aplicação
-````
-2. npm run preview
-````
+```
 
-##
+### 3. Build e Teste de Produção
+Para compilar o código de produção:
+```bash
+npm run build
+```
+Para testar localmente o resultado compilado:
+```bash
+npm run preview
+```
 
-### 📑 Observações
-PONTOS A RESOLVER:
-- Atualizar o código de acordo com novas versões das libs. **risco baixo ou nenhum**
-    - @Material/Ui
-    - Swiper
+---
 
-PONTOS RESOLVIDOS:
-- Libs que estão depreciadas ou em fase de depreciação - **risco médio-alta**
-    - @Material/Core - Depreciada desde 2021, ver documentação de origem.
+## 📈 Diretrizes de Desenvolvimento e Manutenção
 
-- A seguintes libs precisarão serem revisadas após solução das libs depreciada. - **risco baixo-médio** 
-    - date-fns
-    - react-gauge-component
-    - html2canvas
-    - jspdf
-    - react-file-reader
-
-### testes do gitbook
-testando
+* **Migração para TypeScript:** O projeto está em transição. Novos arquivos devem ser criados obrigatoriamente como `.ts` ou `.tsx`. Arquivos legados em `.js` ou `.jsx` devem ser tipados gradualmente.
+* **Manutenção de Dependências:**
+  * **Concluído:** Remoção da biblioteca depreciada `@material/core`.
+  * **Ponto de Atenção:** Revisar no futuro as dependências de formatação e utilitários (`date-fns`, `html2canvas`, `jspdf`, `react-file-reader`) para garantir compatibilidade com as atualizações das libs principais.
