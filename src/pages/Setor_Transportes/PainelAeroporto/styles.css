@@ -1,0 +1,9 @@
+.lastTable {
+    padding-bottom: 10px;
+}
+
+.botaoUpload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

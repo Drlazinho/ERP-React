@@ -1,0 +1,74 @@
+.overlaySlide {
+  position: fixed;
+  z-index: 10;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.CardSlide {
+  padding: 4px 3px;
+  position: relative;
+}
+
+.SlideName {
+  display: flex;
+}
+
+.ConteudoSlide {
+  margin-left: -2px;
+}
+
+.exportAndClean {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 40px;
+  padding-bottom: 10px;
+}
+
+.MuiFormControl-root.MuiFormControl-marginNormal.MuiTextField-root.css-1ijbkqu-MuiFormControl-root-MuiTextField-root {
+  margin-top: 5px;
+}
+
+.DataIn {
+  border: none;
+}
+
+.imgAmvox {
+  width: 150px;
+  height: 85px;
+}
+
+.divGeralAgendamento {
+  display: flex;
+  padding-left: 40px;
+  padding-right: 40px;
+  color: black;
+}
+
+.divConsultarAgendamento {
+  border-radius: 20px;
+  background-color: white;
+  width: 100%;
+  align-items: center;
+  height: 110px;
+  display: flex;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  flex-wrap: wrap;
+  align-content: center;
+  color: black;
+}
+
+.principal {
+  background-color: #f2f2f2;
+  min-height: 100vh;
+  color: black;
+}
+
+.divSelectsAgendamento {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}

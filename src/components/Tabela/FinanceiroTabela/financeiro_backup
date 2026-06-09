@@ -1,0 +1,274 @@
+import React, { memo, useEffect, useState } from 'react';
+import useSortableData from '../../../utils/sortable';
+import ViewColumnIcon from '@mui/icons-material/ViewColumn';
+import { Link } from 'react-router-dom';
+import ViewHeadlineIcon from '@mui/icons-material/ViewHeadline';
+import { AiFillDislike, AiFillLike } from 'react-icons/ai';
+import { ImHappy2 } from 'react-icons/im';
+import { RiEmotionUnhappyFill } from 'react-icons/ri';
+ import { DataGrid } from '@mui/x-data-grid';
+ 
+import {
+  Table,
+  TableHead,
+  TableRow,
+  TableCell,
+  TableBody,
+  Button,
+  Tooltip,
+} from '@mui/material';
+import './styles.css';
+import formatDateTotvs from '../../../utils/formatDataTotvs';
+import FullscreenIcon from '@mui/icons-material/Fullscreen';
+import { width } from '@mui/system';
+
+function FinanceiroTabelaProps({ ...props }) {
+  const { items, requestSort, sortConfig } = useSortableData(props.entregas);
+
+  const getClassNamesFor = (name) => {
+    if (!sortConfig) {
+      return;
+    }
+    return sortConfig.key === name ? sortConfig.direction : undefined;
+  };
+
+  const [visibleColumns, setVisibleColumns] = useState({
+    notafiscal: true,
+    nome: true,
+    destino: true,
+    emissao: true,
+    saida: true,
+    previsao: true,
+    entregue: true,
+    dias: true,
+    opcao: true,
+    condPgto: true,
+    expedido: true,
+  });
+
+  const [tableExpanded, setTableExpanded] = useState(true);
+
+  const toggleColumnVisibility = (columnName) => {
+    setVisibleColumns({
+      ...visibleColumns,
+      [columnName]: !visibleColumns[columnName],
+    });
+  };
+
+  const toggleTableExpansion = () => {
+    setTableExpanded(!tableExpanded);
+  };
+
+  return (
+    <div>
+      <div className="float-end">
+        <button>
+          <ViewColumnIcon  fontSize="large"/>
+        </button>
+        <button>
+          <ViewHeadlineIcon />
+        </button>
+        <button>
+          <FullscreenIcon />
+        </button>
+      </div>
+      <Table>
+        <TableHead>
+          {' '}
+          <TableRow>
+            <TableCell style={{ backgroundColor: '#333D29' }}>
+              <Button
+                style={{ color: 'white' }}
+                type="button"
+                onClick={() => requestSort('notafiscal')}
+                className={getClassNamesFor('notafiscal')}
+              >
+                Nota fiscal
+              </Button>
+            </TableCell>
+            <TableCell style={{ backgroundColor: '#333D29' }}>
+              <Button
+                style={{ color: 'white' }}
+                type="button"
+                onClick={() => requestSort('nome')}
+                className={getClassNamesFor('nome')}
+              >
+                Nome
+              </Button>
+            </TableCell>
+            <TableCell style={{ backgroundColor: '#333D29' }}>
+              <Button
+                style={{ color: 'white' }}
+                type="button "
+                onClick={() => requestSort('destino')}
+                className={getClassNamesFor('destino')}
+              >
+                Dest.
+              </Button>
+            </TableCell>
+            <TableCell style={{ backgroundColor: '#333D29' }}>
+              <Button
+                style={{ color: 'white' }}
+                type="button"
+                onClick={() => requestSort('destino')}
+                className={getClassNamesFor('destino')}
+              >
+                Emis.
+              </Button>
+            </TableCell>
+            <TableCell style={{ backgroundColor: '#333D29' }}>
+              <Button
+                style={{ color: 'white' }}
+                type="button"
+                onClick={() => requestSort('destino')}
+                className={getClassNamesFor('destino')}
+              >
+                Prod.
+              </Button>
+            </TableCell>
+            <TableCell style={{ backgroundColor: '#333D29' }}>
+              <Button
+                style={{ color: 'white' }}
+                type="button"
+                onClick={() => requestSort('destino')}
+                className={getClassNamesFor('destino')}
+              >
+                Prev.
+              </Button>
+            </TableCell>
+            <TableCell style={{ backgroundColor: '#333D29' }}>
+              <Button
+                style={{ color: 'white' }}
+                type="button"
+                onClick={() => requestSort('destino')}
+                className={getClassNamesFor('destino')}
+              >
+                Entregue.
+              </Button>
+            </TableCell>
+            <TableCell style={{ backgroundColor: '#333D29' }}>
+              <Button
+                type="button"
+                onClick={() => requestSort('dias')}
+                className={getClassNamesFor('dias')}
+                style={{ color: 'white' }}
+              >
+                Dias
+              </Button>
+            </TableCell>
+            <TableCell
+              style={{
+                backgroundColor: '#333D29',
+                color: 'white',
+                fontWeight: 'bolder',
+              }}
+            >
+              Opção
+            </TableCell>
+            <TableCell
+              style={{
+                backgroundColor: '#333D29',
+                color: 'white',
+                fontWeight: 'bolder',
+              }}
+            >
+              Cond. pgto
+            </TableCell>
+            <TableCell
+              style={{
+                backgroundColor: '#333D29',
+                color: 'white',
+                fontWeight: 'bolder',
+              }}
+            >
+              <Button
+                style={{ color: 'white' }}
+                type="button"
+                onClick={() => requestSort('expedido')}
+                className={getClassNamesFor('expedido')}
+              >
+                Exp.
+              </Button>
+            </TableCell>
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          {items.length > 0 ? (
+            items.map((item) => (
+              <TableRow className="tr-data" key={item.id}>
+                <TableCell>
+                  <Link
+                    to={`/notafiscal/${item.documento}`}
+                    title="Visualizar Espelho da Nota Fiscal"
+                    style={{ color: 'black' }}
+                  >
+                    {item.documento}
+                  </Link>
+                </TableCell>
+                <TableCell>{item.nome}</TableCell>
+                <TableCell>{item.destino}</TableCell>
+                <TableCell>
+                  {item.emissao === ''
+                    ? '--/--/----'
+                    : formatDateTotvs(item.emissao)}
+                </TableCell>
+                <TableCell>
+                  {item.saida === ''
+                    ? '--/--/----'
+                    : formatDateTotvs(item.saida)}
+                </TableCell>
+                <TableCell>
+                  {item.previsao === ''
+                    ? '--/--/----'
+                    : formatDateTotvs(item.previsao)}
+                </TableCell>
+                <TableCell>
+                  {item.entregue === ''
+                    ? '--/--/----'
+                    : formatDateTotvs(item.entregue)}
+                </TableCell>
+                <TableCell>{item.dias}</TableCell>
+                <TableCell>
+                  {item.dias < 10 ? (
+                    <ImHappy2 style={{ color: 'green' }} />
+                  ) : (
+                    <RiEmotionUnhappyFill style={{ color: 'red' }} size={20} />
+                  )}
+                </TableCell>
+                <TableCell>{item.condPgto}</TableCell>
+                <TableCell>
+                  {item.isLoading ? (
+                    <div className="spinner-border text-primary" role="status">
+                      <span className="visually-hidden">Loading...</span>
+                    </div>
+                  ) : (
+                    <div>
+                      {item.expedido === 0 ? (
+                        <AiFillDislike style={{ color: 'red' }} />
+                      ) : (
+                        <AiFillLike style={{ color: 'green' }} />
+                      )}
+                    </div>
+                  )}
+                </TableCell>
+              </TableRow>
+            ))
+          ) : (
+            <TableRow className="text-dark text-center fs-1 text-capitalize">
+              <TableCell colSpan={11}>
+                Nota pesquisada sem Romaneio Registrada
+              </TableCell>
+            </TableRow>
+          )}
+        </TableBody>
+      </Table>
+    </div>
+  );
+}
+
+export const FinanceiroTabela = memo(
+  FinanceiroTabelaProps,
+  (prevProps, nextProps) => {
+    Object.is(prevProps, nextProps);
+  }
+);

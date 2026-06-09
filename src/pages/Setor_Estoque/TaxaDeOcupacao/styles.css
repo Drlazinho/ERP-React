@@ -1,0 +1,163 @@
+.imgAmvoxTaxa{
+  width: 150px;
+  height: 100px;
+}
+
+.divGeralTaxa{
+  display: flex;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.divConsultarTaxa{
+  border-radius: 20px;
+  background-color: white;
+  width: 100%;
+  height: 190px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.divOcupadoTaxa{
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  align-items: center;
+  height: 80px;
+  width: 115px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border-radius: 20px;
+  justify-content: center;
+}
+
+.divdisponivelTaxa{
+  border-radius: 20px;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  align-items: center;
+  height: 80px;
+  width: 115px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  justify-content: center;
+}
+.totalOcupadoTaxa{
+  color: #EE4E4E;
+}
+.totalDisponivelTaxa{
+  color: #219C90;
+}
+
+.divOcupacaoTaxa{
+  border-radius: 20px;
+    display: flex;
+    padding-left: 10px;
+    height: 190px;
+    padding-right: 10px;
+    background-color: #F2F2F2;
+    justify-content: center;
+}
+
+.divTotalTaxa{
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #F2F2F2;
+  display: grid;
+}
+
+.insideOcupacaoTaxa{
+  border-radius: 20px;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  align-items: center;
+  width: 120px;
+  justify-content: center;
+}
+
+.insideOcupacaoDisTaxa{
+  border-radius: 20px;
+  padding-left: 4px;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  align-items: center;
+  width: 120px;
+  justify-content: center;
+}
+
+.divSelectsTaxa{
+  display: flex;
+}
+
+.labelConsultarTaxa{
+  padding-left: 15px;
+}
+
+span.MuiCircularProgress-root.MuiCircularProgress-determinate.MuiCircularProgress-colorPrimary.css-uzfaaj-MuiCircularProgress-root {
+  width: 70px !important;
+  height: 70px !important;
+}
+
+.btnLimparFiltroTaxa{
+  display: flex;
+  flex-direction: column-reverse;
+  padding-right: 15px;
+}
+
+.footerPageTaxa{
+  text-align: center;
+  background-color: #F2F2F2;
+  color: black;
+}
+
+.principalTaxa{
+  background-color: #F2F2F2;
+  min-height: 100vh;
+}
+
+@media (max-width: 870px){
+  .divConsultar{
+    padding-bottom: 15px;
+  }
+	.divGeral {
+		display: ruby-text;
+	}
+  .divTotal {
+    padding-top: 10px;
+    background-color: #F2F2F2;
+    display: flex;
+  }
+  .divOcupacao{
+    display: flex;
+    height: 108px;
+  }
+}
+
+@media (max-width: 615px){
+	.divGeral {
+		display: ruby-text;
+	}
+  .divTotal {
+    padding-top: 10px;
+    background-color: #F2F2F2;
+    display: flex;
+  }
+  .divOcupacao{
+    display: flex;
+    height: 108px;
+  }
+  .insideOcupacao{
+    width: 250px;
+  }
+  .insideOcupacaoDis{
+    width: 250px;
+  }
+  .divOcupado{
+    width: 250px;
+  }
+  .divdisponivel{
+    width: 250px;
+  }
+}

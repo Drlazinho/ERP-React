@@ -1,0 +1,38 @@
+.section-numberBox .btn {
+    border: none !important;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+
+.box_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.img_statusNota {
+    width: 100% !important;
+    size: 100 !important;
+}
+
+.box_input{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.box_input img {
+    margin: 2rem;
+}

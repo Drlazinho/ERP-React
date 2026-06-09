@@ -1,0 +1,338 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+  height: 100%;
+  background: rgb(39, 38, 38);
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root {
+  height: 100%;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.card-hover-global:hover {
+  animation-name: backgroundColorHoverCards !important;
+  animation: linear 0.2s;
+  border-radius: 5px;
+  -webkit-animation-fill-mode: forwards;
+}
+.card-hover-global-to-left:hover {
+  animation-name: backgroundColorHoverLeft !important;
+  animation: linear 0.2s;
+  border-radius: 5px;
+  -webkit-animation-fill-mode: forwards;
+}
+
+tbody tr:hover {
+  /* background: rgb(140, 216, 156); */
+  animation-name: backgroundColorHoverTrData !important;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes backgroundColorHoverTrData {
+  from {
+    background: linear-gradient(
+      to right,
+      rgb(140, 216, 156) 25%,
+      rgb(140, 216, 156) 50%,
+      rgb(140, 216, 156) 75%,
+      rgb(140, 216, 156) 100%
+    );
+  }
+
+  to {
+    background: linear-gradient(
+      to right,
+      rgb(140, 216, 156) 25%,
+      rgb(140, 216, 156) 50%,
+      rgb(140, 216, 156) 75%,
+      rgb(140, 216, 156) 100%
+    );
+  }
+}
+
+@keyframes backgroundColorHoverCards {
+  from {
+    background: linear-gradient(
+      to right,
+      rgb(243, 109, 109) 10%,
+      rgba(0, 128, 0, 0) 50%,
+      rgba(0, 128, 0, 0) 75%,
+      rgba(0, 0, 255, 0) 100%
+    );
+  }
+  20% {
+    background: linear-gradient(
+      to right,
+      rgb(243, 109, 109) 15%,
+      rgba(0, 128, 0, 0) 50%,
+      rgba(0, 128, 0, 0) 75%,
+      rgba(0, 0, 255, 0) 100%
+    );
+  }
+  40% {
+    background: linear-gradient(
+      to right,
+      rgb(243, 109, 109) 20%,
+      rgba(0, 128, 0, 0) 50%,
+      rgba(0, 128, 0, 0) 75%,
+      rgba(0, 0, 255, 0) 100%
+    );
+  }
+  60% {
+    background: linear-gradient(
+      to right,
+      rgb(243, 109, 109) 25%,
+      rgba(0, 128, 0, 0) 50%,
+      rgba(0, 128, 0, 0) 75%,
+      rgba(0, 0, 255, 0) 100%
+    );
+  }
+  80% {
+    background: linear-gradient(
+      to right,
+      rgb(243, 109, 109) 30%,
+      rgba(0, 128, 0, 0) 50%,
+      rgba(0, 128, 0, 0) 75%,
+      rgba(0, 0, 255, 0) 100%
+    );
+  }
+  to {
+    background: linear-gradient(
+      to right,
+      rgb(243, 109, 109) 35%,
+      rgba(0, 128, 0, 0) 51%,
+      rgba(0, 128, 0, 0) 75%,
+      rgba(0, 0, 255, 0) 100%
+    );
+  }
+}
+@keyframes backgroundColorHoverLeft {
+  from {
+    background: linear-gradient(
+      to left,
+      rgb(243, 109, 109) 10%,
+      rgba(0, 128, 0, 0) 50%,
+      rgba(0, 128, 0, 0) 75%,
+      rgba(0, 0, 255, 0) 100%
+    );
+  }
+  20% {
+    background: linear-gradient(
+      to left,
+      rgb(243, 109, 109) 15%,
+      rgba(0, 128, 0, 0) 50%,
+      rgba(0, 128, 0, 0) 75%,
+      rgba(0, 0, 255, 0) 100%
+    );
+  }
+  40% {
+    background: linear-gradient(
+      to left,
+      rgb(243, 109, 109) 20%,
+      rgba(0, 128, 0, 0) 50%,
+      rgba(0, 128, 0, 0) 75%,
+      rgba(0, 0, 255, 0) 100%
+    );
+  }
+  60% {
+    background: linear-gradient(
+      to left,
+      rgb(243, 109, 109) 25%,
+      rgba(0, 128, 0, 0) 50%,
+      rgba(0, 128, 0, 0) 75%,
+      rgba(0, 0, 255, 0) 100%
+    );
+  }
+  80% {
+    background: linear-gradient(
+      to left,
+      rgb(243, 109, 109) 30%,
+      rgba(0, 128, 0, 0) 50%,
+      rgba(0, 128, 0, 0) 75%,
+      rgba(0, 0, 255, 0) 100%
+    );
+  }
+  to {
+    background: linear-gradient(
+      to left,
+      rgb(243, 109, 109) 35%,
+      rgba(0, 128, 0, 0) 51%,
+      rgba(0, 128, 0, 0) 75%,
+      rgba(0, 0, 255, 0) 100%
+    );
+  }
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75% !important;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5% !important;
+  }
+
+  @keyframes backgroundColorHoverCards {
+    from {
+      background: linear-gradient(
+        to right,
+        rgb(243, 109, 109) 10%,
+        rgba(0, 128, 0, 0) 50%,
+        rgba(0, 128, 0, 0) 75%,
+        rgba(0, 0, 255, 0) 100%
+      );
+    }
+    20% {
+      background: linear-gradient(
+        to right,
+        rgb(243, 109, 109) 15%,
+        rgba(0, 128, 0, 0) 50%,
+        rgba(0, 128, 0, 0) 75%,
+        rgba(0, 0, 255, 0) 100%
+      );
+    }
+    40% {
+      background: linear-gradient(
+        to right,
+        rgb(243, 109, 109) 20%,
+        rgba(0, 128, 0, 0) 50%,
+        rgba(0, 128, 0, 0) 75%,
+        rgba(0, 0, 255, 0) 100%
+      );
+    }
+    60% {
+      background: linear-gradient(
+        to right,
+        rgb(243, 109, 109) 25%,
+        rgb(243, 109, 109) 50%,
+        rgba(0, 128, 0, 0) 75%,
+        rgba(0, 0, 255, 0) 100%
+      );
+    }
+    80% {
+      background: linear-gradient(
+        to right,
+        rgb(255, 161, 161) 30%,
+        rgb(255, 161, 161) 50%,
+        rgb(243, 109, 109) 75%,
+        rgba(0, 0, 255, 0) 100%
+      );
+    }
+    to {
+      background: linear-gradient(
+        to right,
+        rgb(255, 161, 161) 35%,
+        rgb(255, 161, 161) 51%,
+        rgb(255, 161, 161) 75%,
+        rgb(255, 161, 161) 100%
+      );
+    }
+  }
+  @keyframes backgroundColorHoverCardsLeft {
+    from {
+      background: linear-gradient(
+        to left,
+        rgb(243, 109, 109) 10%,
+        rgba(0, 128, 0, 0) 50%,
+        rgba(0, 128, 0, 0) 75%,
+        rgba(0, 0, 255, 0) 100%
+      );
+    }
+    20% {
+      background: linear-gradient(
+        to left,
+        rgb(243, 109, 109) 15%,
+        rgba(0, 128, 0, 0) 50%,
+        rgba(0, 128, 0, 0) 75%,
+        rgba(0, 0, 255, 0) 100%
+      );
+    }
+    40% {
+      background: linear-gradient(
+        to left,
+        rgb(243, 109, 109) 20%,
+        rgba(0, 128, 0, 0) 50%,
+        rgba(0, 128, 0, 0) 75%,
+        rgba(0, 0, 255, 0) 100%
+      );
+    }
+    60% {
+      background: linear-gradient(
+        to left,
+        rgb(243, 109, 109) 25%,
+        rgb(243, 109, 109) 50%,
+        rgba(0, 128, 0, 0) 75%,
+        rgba(0, 0, 255, 0) 100%
+      );
+    }
+    80% {
+      background: linear-gradient(
+        to left,
+        rgb(255, 161, 161) 30%,
+        rgb(255, 161, 161) 50%,
+        rgb(243, 109, 109) 75%,
+        rgba(0, 0, 255, 0) 100%
+      );
+    }
+    to {
+      background: linear-gradient(
+        to left,
+        rgb(255, 161, 161) 35%,
+        rgb(255, 161, 161) 51%,
+        rgb(255, 161, 161) 75%,
+        rgb(255, 161, 161) 100%
+      );
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+}
+.react-icons {
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -ms-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+.button-interactive-table {
+  padding: 0.15rem;
+  border: none;
+  border-radius: 100%;
+  background-color: #ffffff;
+}
+
+.z-index-2 {
+  z-index: 2;
+}
+
+.z-index-3 {
+  z-index: 3;
+}
+
+.z-index-4 {
+  z-index: 4;
+}

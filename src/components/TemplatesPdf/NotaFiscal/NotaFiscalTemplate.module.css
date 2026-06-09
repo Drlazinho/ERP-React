@@ -1,0 +1,214 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.actions {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.pdfButton {
+  background-color: #800000 !important;
+  color: white !important;
+}
+
+.content {
+  font-family: 'Courier New', Courier, monospace !important;
+  height: 31cm;
+  width: 21cm;
+  font-size: 10pt;
+  margin: 0;
+  padding: 0.4cm;
+  color: black !important;
+  background-color: #fff !important;
+}
+
+/* Estilos gerais */
+.tCenter {
+  text-align: center;
+}
+
+.tLeft {
+  text-align: left;
+}
+
+.tRight {
+  text-align: right;
+}
+
+.flex {
+  display: flex;
+}
+
+.flexC {
+  flex-direction: column;
+}
+
+.alignCenter {
+  align-items: center;
+}
+
+.justifyCenter {
+  justify-content: center;
+}
+
+.justifyBetween {
+  justify-content: space-between;
+}
+
+.mt1 {
+  margin-top: 0.1cm;
+}
+
+.mt2 {
+  margin-top: 0.2cm;
+}
+
+.mb2 {
+  margin-bottom: 0.2cm;
+}
+
+.pl1 {
+  padding-left: 0.1cm;
+}
+
+.br {
+  border-right: 0.5pt solid gray;
+}
+
+.bt {
+  border-top: 0.5pt solid gray;
+}
+
+.bb {
+  border-bottom: 0.5pt solid gray;
+}
+
+.bl {
+  border-left: 0.5pt solid gray;
+}
+
+.b {
+  border: 0.5pt solid gray;
+}
+
+/* Estilos específicos para a nota fiscal */
+.cabecalhoRecebimento {
+  display: grid;
+  grid-template-columns: 17.1cm 3.1cm;
+  font-size: 6pt;
+}
+
+.quadradoRecebimento {
+  display: grid;
+  grid-template-columns: 17.1cm 3.1cm;
+}
+
+.textRecebimentoReistar {
+  border-right: 0.5pt solid gray;
+}
+
+.textRecebimentoNfe {
+  text-align: center;
+  font-weight: bold;
+}
+
+.quadradoRecebimento2 {
+  display: grid;
+  grid-template-columns: 3.1cm 14cm 3.1cm;
+  height: 0.7cm;
+  font-size: 6pt;
+  font-weight: bold;
+}
+
+.cabecalho {
+  display: grid;
+  height: 3.48cm;
+  grid-template-columns: 6.8cm 3.4cm 10cm;
+  grid-template-rows: 3.48cm;
+}
+
+.rowH {
+  grid-template-rows: 0.85cm;
+}
+
+.quadroDadosEmitente {
+  position: relative;
+}
+
+.logoImg {
+  max-width: 100px;
+  max-height: 60px;
+  width: auto;
+  height: auto;
+}
+
+.logo {
+  position: absolute;
+  margin-top: 32px;
+  margin-left: 5px;
+}
+
+.razaoSocialHead {
+  width: 130px;
+  margin-left: 113px;
+}
+
+.razaoSocialText {
+  font-size: 10pt;
+}
+
+.endereco p {
+  font-size: 7pt;
+  width: 170px;
+  margin-left: 110px;
+}
+
+.quadroDescricaoDanfe {
+  position: relative;
+}
+
+.danfe {
+  font-size: 12pt;
+  position: absolute;
+  top: 0;
+  left: 35px;
+}
+
+.danfeLegenda {
+  position: absolute;
+  top: 23px;
+  left: 2px;
+}
+
+.containerEntradaSaida {
+  position: absolute;
+  display: flex;
+  top: 55px;
+  left: 30px;
+}
+
+.entradaSaidaOptions {
+  display: flex;
+  flex-direction: column;
+}
+
+.entradaSaidaOpcao {
+  position: absolute;
+  top: 55px;
+  left: 95px;
+}
+
+.numeroNota {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 4px;
+  left: 24px;
+}
+
+/* ... (continuar com os outros estilos específicos) */

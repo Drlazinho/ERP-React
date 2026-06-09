@@ -1,0 +1,124 @@
+.imgAmvox {
+  width: 150px;
+  height: 85px;
+}
+
+.boxGeralMEI {
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+  padding-right: 40px;
+  color: black;
+}
+
+.footerPagePrincipal {
+  text-align: center;
+  background-color: #000000;
+  color: #fff;
+  display: flex;
+  font-family: Poppins, sans-serif;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  /* height: 100%; */
+}
+
+.boxFiltro {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  color: black;
+}
+
+.boxCard {
+  display: flex;
+  padding: 24px 32px;
+  gap: 16px;
+  flex: 1 0 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #fff;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.25);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.boxConsultarMEI {
+  border-radius: 8px;
+  margin-top: 16px;
+  align-items: flex-start;
+  background-color: white;
+  width: 100%;
+  align-items: center;
+  height: 120px;
+  display: flex;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  flex-wrap: wrap;
+  align-content: center;
+  color: black;
+}
+
+.boxSelects {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  padding: 24px;
+}
+
+.footerPage {
+  text-align: center;
+  color: black;
+}
+
+.principal {
+  background-color: #f2f2f2;
+  min-height: 100vh;
+  color: black;
+}
+
+@media (max-width: 870px) {
+  .divConsultar {
+    padding-bottom: 15px;
+  }
+  .boxGeralMEI {
+    display: ruby-text;
+  }
+  .divTotal {
+    padding-top: 10px;
+    background-color: #f2f2f2;
+    display: flex;
+  }
+  .divOcupacao {
+    display: flex;
+    height: 108px;
+  }
+}
+
+@media (max-width: 615px) {
+  .divGeral {
+    display: ruby-text;
+  }
+  .divTotal {
+    padding-top: 10px;
+    background-color: #f2f2f2;
+    display: flex;
+  }
+  .divOcupacao {
+    display: flex;
+    height: 108px;
+  }
+  .insideOcupacao {
+    width: 250px;
+  }
+  .insideOcupacaoDis {
+    width: 250px;
+  }
+  .divOcupado {
+    width: 250px;
+  }
+  .divdisponivel {
+    width: 250px;
+  }
+}

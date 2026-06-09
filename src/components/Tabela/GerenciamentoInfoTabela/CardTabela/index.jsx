@@ -1,0 +1,223 @@
+import React, { memo, useState } from 'react';
+import useSortableData from '../../../../utils/sortable';
+import './style.css';
+import { Buttonth } from '../../InspetorTabela/styles';
+import { Switch } from '@mui/material';
+import {
+  CancelOutlined,
+  CheckCircleOutlineOutlined,
+} from '@mui/icons-material';
+import { Button } from '@mui/material';
+
+const TabelaCardProps = ({ ...props }) => {
+  const { items, requestSort, sortConfig } = useSortableData(
+    props.gerenciarInfo
+  );
+
+  const getClassNamesFor = (name) => {
+    if (!sortConfig) {
+      return;
+    }
+
+    return sortConfig.key === name ? sortConfig.direction : undefined;
+  };
+  const [descricaoValor, setDescricaoValor] = useState(''); // Estado para o novo valor
+  const [editStates, setEditStates] = useState({});
+  const [editedValues, setEditedValues] = useState({});
+  const [isChecked, setIsChecked] = useState(false);
+  const [newItemStatus, setNewItemStatus] = useState(0); // Estado para o status do novo item
+
+  const [novaDescricaoCard, setNovaDescricaoCard] = useState({});
+
+  const handleEdit = (itemId) => {
+    setEditStates((prevState) => ({
+      ...prevState,
+      [itemId]: !prevState[itemId],
+    }));
+  };
+
+  const handleToggle = () => {
+    setIsChecked(!isChecked);
+  };
+
+  const handleSaveNovaDescricaoCard = (value) => {
+    props.atualizarDescricaoCard(value);
+  };
+
+  const handleSave = (itemId) => {
+    setEditedValues((prevValues) => ({
+      ...prevValues,
+      [itemId]: novaDescricaoCard[itemId] || editedValues[itemId],
+    }));
+    setEditStates((prevState) => ({
+      ...prevState,
+      [itemId]: false, // Encerrar o modo de edição para este item
+    }));
+  };
+
+  const Valor = {
+    id: items.length + 1,
+    descricao: descricaoValor,
+    status: 1,
+  };
+
+  const inserirValor = () => {};
+
+  return (
+    <table className="table table-striped table hover">
+      <thead className="table-dark  position-stick top 10">
+        <tr>
+          <th>
+            <Buttonth
+              type="button"
+              onClick={() => requestSort('id')}
+              className={getClassNamesFor('id')}
+            >
+              Id
+            </Buttonth>
+          </th>
+          <th>
+            <Buttonth
+              type="button"
+              onClick={() => requestSort('descricao')}
+              className={getClassNamesFor('descricao')}
+            >
+              Descrição
+            </Buttonth>
+          </th>
+          <th>
+            <Buttonth
+              type="button"
+              onClick={() => requestSort('status')}
+              className={getClassNamesFor('status')}
+            >
+              Status
+            </Buttonth>
+          </th>
+          <th>
+            <Buttonth
+              type="button"
+              onClick={() => requestSort('')}
+              className={getClassNamesFor('')}
+            ></Buttonth>
+          </th>
+          <th>
+            <div className="d-flex justify-content-start  flex-row me-5">
+              {/* <input
+    style={{ maxWidth: '200px' }}
+    type="text"
+    className="form-control "
+    value={newValue}
+    placeholder='Adicionar'
+    onChange={(e) => setNewValue(e.target.value)}
+  />
+ 
+  <p className='ms-3 me-2 mt-2'>status:</p>
+ 
+  <Switch
+  className='mb-2 me-3'
+    checked={newItemStatus === 1}
+    onChange={() => setNewItemStatus(newItemStatus === 0 ? 1 : 0)}
+    color="success"
+  /> 
+  <Button
+    className=''
+    variant="contained"
+    size="small"
+    onClick={handleAddNewValue}
+  >
+    Adicionar
+  </Button> */}
+            </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        {items.map((item) => (
+          <tr className="tr-data coluna" key={item.id}>
+            <td className="">{item.id}</td>
+            <td>
+              {!editStates[item.id] ? (
+                editedValues[item.id] || item.descricao
+              ) : (
+                <div className="d-flex  display-flex justify-content-start">
+                  <input
+                    type="text"
+                    className="form-control"
+                    style={{ width: '200px' }}
+                    value={novaDescricaoCard.descricao}
+                    onChange={(e) =>
+                      setNovaDescricaoCard({
+                        id: item.id,
+                        descricao: e.target.value,
+                        idprocesso: '',
+                      })
+                    }
+                  />
+                  <section>
+                    <Button
+                      className="ms-2"
+                      variant="contained"
+                      size="small"
+                      onClick={() => {
+                        handleSaveNovaDescricaoCard(novaDescricaoCard);
+                        handleSave(item.id);
+                      }}
+                    >
+                      Salvar
+                    </Button>
+                  </section>
+                </div>
+              )}
+            </td>
+            <td>{item.status}</td>
+            <td>
+              <Switch
+                color={item.status === 0 ? 'danger' : 'success'}
+                slotProps={{ input: { 'aria-label': 'dark mode' } }}
+                startDecorator={
+                  <CancelOutlined
+                    sx={{ color: item.status === 0 ? 'red' : 'gray' }}
+                  />
+                }
+                endDecorator={
+                  <CheckCircleOutlineOutlined
+                    sx={{ color: item.status === 1 ? 'green' : 'gray' }}
+                  />
+                }
+                checked={item.status}
+                onChange={(e) => props.atualizarServicoPage(item.id)}
+              />
+            </td>
+            <td>
+              {!editStates[item.id] ? (
+                <Button
+                  variant="contained"
+                  size="small"
+                  onClick={() => handleEdit(item.id)}
+                >
+                  Editar
+                </Button>
+              ) : (
+                <div className="d-flex vw-100">
+                  <Button
+                    className="ms-2"
+                    variant="contained"
+                    size="small"
+                    onClick={() => handleEdit(item.id)}
+                  >
+                    Cancelar
+                  </Button>
+                </div>
+              )}
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+};
+
+export const TabelaCard = memo(TabelaCardProps, (prevProps, nextProps) => {
+  Object.is(prevProps, nextProps);
+});

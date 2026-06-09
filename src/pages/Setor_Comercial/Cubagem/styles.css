@@ -1,0 +1,18 @@
+@media (max-width: 1520px) {
+  .table-cell {
+    min-width: 150px;
+  }
+}
+
+@media (max-width: 1130px) {
+  .opcoes {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 570px) {
+  .search {
+    flex-wrap: wrap;
+  }
+}

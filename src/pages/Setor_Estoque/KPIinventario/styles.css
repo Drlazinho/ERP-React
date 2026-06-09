@@ -1,0 +1,178 @@
+.imgAmvox {
+  width: 150px;
+  height: 85px;
+}
+
+.boxGeral {
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+  padding-right: 40px;
+  color: black;
+}
+
+.boxMes {
+  display: flex;
+}
+
+.footerPagePrincipal {
+  text-align: center;
+  background-color: #000000;
+  color: #fff;
+  display: flex;
+  font-family: Poppins, sans-serif;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  height: 100%;
+}
+
+.boxFiltro {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  color: black;
+}
+
+.boxGraficoRadial {
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex: 1 0 0;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.25);
+}
+
+.cardInventario {
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  flex: 1 1 auto;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.25);
+}
+
+.tableInventario {
+  min-width: 421px;
+  height: 87px;
+}
+
+.boxConsultar {
+  border-radius: 8px;
+  margin-top: 16px;
+  background-color: white;
+  justify-content: flex-start;
+  width: 100%;
+  display: flex;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  color: black;
+}
+
+.boxSelects {
+  display: flex;
+  width: 100%;
+}
+
+.footerPage {
+  text-align: center;
+  color: black;
+}
+
+.principal {
+  background-color: #f3f4f6;
+  min-height: 100vh;
+  color: black;
+}
+
+@media (max-width: 1370px) {
+  .boxMes {
+    flex-flow: wrap;
+    justify-content: center;
+    row-gap: 10px;
+    column-gap: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 870px) {
+  .divConsultar {
+    padding-bottom: 15px;
+  }
+
+  .boxGeral {
+    display: ruby-text;
+    display: flex;
+  }
+
+  .divTotal {
+    padding-top: 10px;
+    background-color: #f3f4f6;
+    display: flex;
+  }
+
+  .divOcupacao {
+    display: flex;
+    height: 108px;
+  }
+}
+
+@media (max-width: 650px) {
+  .tableInventario {
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 615px) {
+  .divGeral {
+    display: ruby-text;
+  }
+
+  .divTotal {
+    padding-top: 10px;
+    background-color: #f2f2f2;
+    display: flex;
+  }
+
+  .divOcupacao {
+    display: flex;
+    height: 108px;
+  }
+
+  .insideOcupacao {
+    width: 250px;
+  }
+
+  .insideOcupacaoDis {
+    width: 250px;
+  }
+
+  .divOcupado {
+    width: 250px;
+  }
+
+  .divdisponivel {
+    width: 250px;
+  }
+}
+
+@media (max-width: 530px) {
+  .tableInventario {
+    min-width: 170px;
+  }
+}
+
+@media (max-width: 416px) {
+  .boxGeral {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

@@ -1,0 +1,18 @@
+export const authorizedEmails = [
+  'tidesenvolvimento@amvox.com.br',
+  'tidesenvolvimento2@amvox.com.br',
+  'tidesenvolvimento3@amvox.com.br',
+  'tidesenvolvimento4@amvox.com.br',
+  'tidesenvolvimento5@amvox.com.br',
+  'tidesenvolvimento6@amvox.com.br',
+  'tidesenvolvimento7@amvox.com.br',
+  'tidesenvolvimento8@amvox.com.br',
+  'tidesenvolvimento9@amvox.com.br',
+  'tidesenvolvimento10@amvox.com.br',
+  'gerente.ti@amvox.com.br',
+  'suporteti@amvox.com.br',
+  'supervisoraatendimento@amvox.com.br',
+  'gerenciaposvendas@amvox.com.br',
+  'diretordeoperacoes@amvox.com.br',
+  'liderdeatendimento@amvox.com.br',
+];

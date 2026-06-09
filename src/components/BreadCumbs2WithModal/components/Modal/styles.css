@@ -1,0 +1,18 @@
+.btn-modal {
+    background-color: transparent !important;
+    border-color: #00FF38 !important;
+    color: #00FF38 !important;
+    font-weight: 500;
+}
+
+.btn-modal-cancel {
+    background-color: transparent !important;
+    border-color: #555555 !important;
+    color: #555555 !important;
+    font-weight: 500;
+}
+
+.btn-modal-cancel:hover {
+    border-color: #ff0000 !important;
+    color: #ff0000 !important;
+}

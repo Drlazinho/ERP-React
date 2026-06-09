@@ -1,0 +1,152 @@
+.section-numberBox .btn {
+    border: none !important;
+}
+.tabelaEntregasMobileToPC{ 
+    height: 600;
+    width: '100%';
+    overflow: 'scroll';
+    flex-grow: '3';
+}
+
+@media (min-width: 1700px) {
+
+    .row-content {
+        display: flex;
+        flex-direction: row !important;
+        gap: 1rem !important;
+    }
+}
+
+@media (max-width: 1700px) {
+    .row-content {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 1rem;    
+    }
+}
+
+@media (max-width: 700px) {
+    .section-numberBox {
+        border: 2px solid #ea8383 !important;
+        margin: 0;
+        padding: 0;
+        border-radius: 8px;
+    }
+}
+
+.input-fiscal-principal {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    left: 40%;
+    top: 5px;
+}
+
+.input-fiscal-principal input {
+    border-radius: 0;
+    border: 2px solid #acacac;
+    border-right: none;
+    line-height: 2;
+    padding: 0 0.5rem;
+    outline-color: #0dcaf0;
+    outline-width: 2px;
+}
+.input-fiscal-principal label {
+    border-radius: 10px 0px 0px 10px;
+    border: 2px solid #acacac;
+    border-right: none;
+    line-height: 2;
+    padding: 0 0.5rem;
+    background-color: #e2e2e2;
+}
+.input-fiscal-principal i {
+    border-radius: 0 10px 10px 0;
+    border: 2px solid #acacac;
+    border-left: none;
+    line-height: 2;
+    padding: 0 0.5rem;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+#btn-css {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.btn-reveal-filter {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+}
+.render-Bread {
+    animation: blur linear 0.3s !important;
+}
+
+@keyframes blur {
+    0% {
+        filter: grayscale(100);
+        filter: blur(10px);
+        transform: translateY(40px);
+    }
+
+    100% {
+        filter: blur(0);
+        filter: grayscale(0);
+        transform: translateY(0px);
+    }
+}
+
+.filter-box-hidden {
+    visibility: hidden;
+    height: 1px;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+@media (max-width: 800px) {
+    .input-fiscal-principal {
+        position: static;
+        margin-bottom: 1rem;
+    }
+
+    .input-fiscal-principal label {
+        text-indent: -9999px;
+    }
+    .input-fiscal-principal i {
+        height: 36px !important;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .tabelaEntregasMobileToPC{ 
+        height: 650px !important;
+        width: '100%';
+        overflow: 'scroll';
+        flex-grow: '3';
+    }
+
+    .row-content {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;    
+    }
+
+    .showBreadcrumpsMobileOrWeb {
+        display: none;
+    }
+}
+
+@media (max-width: 350px) {
+    .input-fiscal-principal input {
+        width: 100%;
+    }
+}

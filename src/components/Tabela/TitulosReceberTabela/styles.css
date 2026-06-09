@@ -1,0 +1,94 @@
+body {
+  font-family: 'open sans', sans-serif;
+  font-size: 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  position: relative;
+}
+thead {
+  position: sticky;
+  top: 0;
+}
+
+thead tr {
+  color: black;
+  text-align: left;
+  border-bottom: 2px solid black;
+}
+
+thead th {
+  color: black;
+  text-align: left;
+  border-bottom: 2px solid black;
+}
+
+thead button {
+  background: transparent;
+  border: 0;
+  border-radius: none;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: inherit;
+  padding: 0.5em;
+  margin-bottom: 1px;
+  color: #ccc;
+}
+
+thead button:hover {
+  color: rgb(69, 69, 175);
+  text-decoration: underline;
+}
+
+thead button.ascending::after {
+  content: '\2193';
+  display: inline-block;
+  margin-left: 1em;
+}
+
+thead button.descending::after {
+  content: '\2191';
+  display: inline-block;
+  margin-left: 1em;
+  color: #ccc;
+}
+
+tbody td {
+  padding: 0.5em;
+  border-bottom: 1px solid #ccc;
+  font-size: .7rem;
+  word-break: keep-all;
+  -ms-word-break: keep-all;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.marcador-linha-tabela {
+  background-color: rgb(255, 185, 185);
+}
+
+.tr-data:hover {
+  animation-name: backgroundColorHoverTrData !important;
+  animation: linear .25s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes backgroundColorHoverTrData {
+  from {
+    background: linear-gradient(to right, rgb(140, 216, 156)  25%, rgba(255, 255, 0, 0) 50%, rgba(0, 128, 0, 0) 75%, rgba(0, 0, 255, 0) 100%);
+  }
+  50% {
+    background: linear-gradient(to right, rgb(140, 216, 156)  25%, rgb(140, 216, 156) 50%, rgba(0, 128, 0, 0) 75%, rgba(0, 0, 255, 0) 100%);
+
+  }
+  75% {
+    background: linear-gradient(to right, rgb(140, 216, 156)  25%, rgb(140, 216, 156) 50%, rgb(140, 216, 156) 75%, rgba(0, 0, 255, 0) 100%);
+
+  }
+
+  to {
+    background: linear-gradient(to right, rgb(140, 216, 156)  25%, rgb(140, 216, 156) 50%, rgb(140, 216, 156) 75%, rgb(140, 216, 156) 100%);
+  }
+}

@@ -1,0 +1,32 @@
+export const setorSelect = [
+  { id: 'Financeiro', nome: 'Financeiro' },
+  { id: 'Estoque', nome: 'Estoque' },
+  { id: 'Comercial', nome: 'Comercial' },
+  { id: 'Pós Venda', nome: 'Pós Venda' },
+  { id: 'Transportes', nome: 'Transportes' },
+  { id: 'Inteligência', nome: 'Inteligência' },
+  { id: 'Produção', nome: 'Produção' },
+  { id: 'Marketing', nome: 'Marketing' },
+  { id: 'Importação', nome: 'Importação' },
+  { id: 'Compras Nacional', nome: 'Compras Nacional' },
+  { id: 'Produtos', nome: 'Produtos' },
+  { id: 'Facilities', nome: 'Facilities' },
+  { id: 'RH/SESMT', nome: 'RH/SESMT' },
+  { id: 'Contabil', nome: 'Contabil' },
+  { id: 'Diretoria', nome: 'Diretoria' },
+];
+
+export const meses = [
+  { id: 'Janeiro', nome: 'Janeiro' },
+  { id: 'Fevereiro', nome: 'Fevereiro' },
+  { id: 'Março', nome: 'Março' },
+  { id: 'Abril', nome: 'Abril' },
+  { id: 'Maio', nome: 'Maio' },
+  { id: 'Junho', nome: 'Junho' },
+  { id: 'Julho', nome: 'Julho' },
+  { id: 'Agosto', nome: 'Agosto' },
+  { id: 'Setembro', nome: 'Setembro' },
+  { id: 'Outubro', nome: 'Outubro' },
+  { id: 'Novembro', nome: 'Novembro' },
+  { id: 'Dezembro', nome: 'Dezembro' },
+];

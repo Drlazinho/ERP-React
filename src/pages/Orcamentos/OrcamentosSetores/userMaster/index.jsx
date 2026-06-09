@@ -1,0 +1,37 @@
+export const userMaster = [
+  // TI
+  { id: 3, email: 'gerente.ti@amvox.com.br' },
+  { id: 31, email: 'tidesenvolvimento@amvox.com.br' },
+  { id: 199, email: 'tidesenvolvimento2@amvox.com.br' },
+  { id: 32, email: 'tidesenvolvimento3@amvox.com.br' },
+  { id: 33, email: 'tidesenvolvimento4@amvox.com.br' },
+  { id: 107, email: 'tidesenvolvimento5@amvox.com.br' },
+  { id: 149, email: 'tidesenvolvimento6@amvox.com.br' },
+  { id: 160, email: 'tidesenvolvimento7@amvox.com.br' },
+  { id: 202, email: 'tidesenvolvimento8@amvox.com.br' },
+  { id: 219, email: 'tidesenvolvimento9@amvox.com.br' },
+  { id: 272, email: 'tidesenvolvimento10@amvox.com.br' },
+  { id: 37, email: 'suporteti@amvox.com.br' },
+  // Contabilidade
+  { id: 198, email: 'controladoria@amvox.com.br' },
+  { id: 124, email: 'contabilidade1@amvox.com.br' },
+  { id: 17, email: 'rodrigo@amvox.com.br' },
+  // Diretoria
+  { id: 36, email: 'guilherme@amvox.com.br' },
+  { id: 18, email: 'maciel@amvox.com.br' },
+  { id: 35, email: 'valdir@amvox.com.br' },
+  { id: 43, email: 'antonio@amvox.com.br' },
+  { id: 156, email: 'diretordeoperacoes@amvox.com.br' },
+  // Gerentes
+  { id: 68, email: 'gerentecomercial@amvox.com.br' },
+  { id: 8, email: 'gerenteprodutos@amvox.com.br' },
+  { id: 63, email: 'importacao@amvox.com.br' },
+  { id: 230, email: 'gerenterh@amvox.com.br' },
+  { id: 59, email: 'gerenteestoque@amvox.com.br' },
+  { id: 252, email: 'chamadosfacilities@amvox.com.br' },
+  { id: 97, email: 'gerentefinanceiro@amvox.com.br' },
+  { id: 19, email: 'gerenciaposvendas@amvox.com.br' },
+  { id: 158, email: 'gerentedeproducao@amvox.com.br' },
+  { id: 166, email: 'logistica@amvox.com.br' },
+  { id: 94, email: 'lilian@amvox.com.br' },
+];

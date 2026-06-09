@@ -1,0 +1,14 @@
+.td {
+  font-size: 14px;
+  color: gray;
+  line-height: 1.4;
+  position: relative;
+  width: 265px;
+  padding-left: 42px;
+  padding-top: 12px;
+  padding-bottom: 14px;
+  font-weight: unset;
+  padding-right: 10px;
+  display: table-cell;
+  vertical-align: inherit;
+}

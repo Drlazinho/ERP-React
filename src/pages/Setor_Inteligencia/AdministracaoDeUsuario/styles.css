@@ -1,0 +1,79 @@
+@media screen and (min-width: 768px) {
+  :root {
+    --big-fonr-size: 2.5rem;
+    --normal-font-size: 1rem;
+  }
+}
+
+.imgAmvox {
+  width: 150px;
+  height: 100px;
+}
+
+.footerPage {
+  text-align: center;
+  background-color: #f2f2f2;
+  color: black;
+  opacity: 80%;
+  flex-direction: 'column';
+  align-items: 'center';
+}
+
+.principalProdutoForaLinha {
+  background-color: #f2f2f2;
+  min-height: 100vh;
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 30px;
+  padding-left: 10px;
+}
+
+.userAdm {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  padding-right: 25px;
+  padding-top: 25px;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  padding-left: 10px;
+  flex-direction: column;
+  right: 0;
+  top: 50%; 
+  transform: translateY(-50%); 
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.divSelect {
+  width: 100%;
+}
+
+.card_selecionado_protocolo_notas {
+  background: rgb(23, 107, 190);
+  background: linear-gradient(
+    0deg,
+    rgb(22, 99, 177) 40%,
+    rgb(48, 135, 221) 100%
+  );
+}

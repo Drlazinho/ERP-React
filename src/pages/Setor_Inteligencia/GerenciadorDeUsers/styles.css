@@ -1,0 +1,57 @@
+.imgAmvox {
+  width: 150px;
+  height: 85px;
+}
+
+.footerPagePrincipal {
+  text-align: center;
+  background-color: #000000;
+  color: #fff;
+  display: flex;
+  font-family: Poppins, sans-serif;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  height: 100%;
+}
+
+.boxFiltros {
+  border-radius: 8px;
+  margin-top: 16px;
+  align-items: flex-start;
+  background-color: white;
+  width: 100%;
+  align-items: center;
+  height: 120px;
+  display: flex;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  flex-wrap: wrap;
+  align-content: center;
+  color: black;
+  margin-bottom: 24px;
+}
+
+.boxField {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  padding: 24px;
+}
+
+.footerPage {
+  text-align: center;
+  color: black;
+}
+
+.principal {
+  background-color: #f3f4f6;
+  min-height: 100vh;
+  color: black;
+}
+
+@media (max-width: 416px) {
+  .boxGeral {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

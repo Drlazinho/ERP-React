@@ -1,0 +1,22 @@
+.imgAmvox{
+  width: 150px;
+  height: 100px;
+}
+
+.divGeral{
+  display: flex;
+  padding-left: 40px;
+  padding-right: 40px;
+  flex-direction: column;
+}
+
+.footerPage{
+  text-align: center;
+  background-color: #F2F2F2;
+  color: black;
+}
+
+.principal{
+  background-color: #F2F2F2;
+  min-height: 100vh;
+}

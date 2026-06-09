@@ -1,0 +1,11 @@
+.compactTable{
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.tabelaNPS {
+  display: flex;
+  padding-top: 5px;
+  color: black;
+  align-items: center;
+}

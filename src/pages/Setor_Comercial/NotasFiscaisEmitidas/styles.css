@@ -1,0 +1,328 @@
+.section-numberBox .btn {
+  border: none !important;
+}
+
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.bouncing-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  animation: bounceAnimation 2s infinite;
+}
+
+@keyframes bounceAnimation {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-5px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+body {
+  font-family: 'open sans', sans-serif;
+  font-size: 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  text-align: left;
+  border-bottom: 2px solid black;
+}
+
+thead button {
+  border: 0;
+  border-radius: none;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: inherit;
+  padding: 0.5em;
+  margin-bottom: 1px;
+}
+
+thead button.ascending::after {
+  content: '👇';
+  display: inline-block;
+  margin-left: 1em;
+}
+
+thead button.descending::after {
+  content: '☝️';
+  display: inline-block;
+  margin-left: 1em;
+}
+
+tbody td {
+  padding: 0.5em;
+  border-bottom: 1px solid #ccc;
+}
+
+tbody tr:hover {
+  background-color: #eee;
+}
+
+.imgAmvox {
+  width: 150px;
+  height: 100px;
+}
+
+.divGeralNotasEmitidas {
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 24px;
+}
+
+.divConsultarNotasFiscais {
+  border-radius: 18px;
+  background-color: white;
+  width: 100%;
+  height: 100px;
+  box-shadow: 1px 1px 3px 1px rgb(0 0 0 / 0.25);
+}
+
+.divOcupado {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  align-items: center;
+  height: 80px;
+  width: 115px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border-radius: 20px;
+  justify-content: center;
+}
+
+.tituloSec {
+  display: flex;
+  align-items: center;
+  color: grey;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  padding-left: 10px;
+}
+
+.filtroDashNotaFiscal {
+  border-radius: 16px;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  height: 80px;
+  margin-bottom: 16px;
+  margin-left: 20px;
+  width: auto;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  flex-direction: row;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.tituloPri {
+  display: flex;
+  align-items: center;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  padding-left: 10px;
+}
+
+.divdisponivel {
+  border-radius: 20px;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  align-items: center;
+  height: 80px;
+  width: 115px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  justify-content: center;
+}
+.totalOcupado {
+  color: #ee4e4e;
+}
+.totalDisponivel {
+  color: #219c90;
+}
+
+.cardNfEmitida {
+  display: flex;
+  width: 100%;
+  height: 120px;
+  padding: 24px;
+  flex-direction: column;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  background-color: #fff;
+  box-shadow: 1px 1px 3px 1px rgb(0 0 0 / 0.25);
+  text-align: 'left';
+}
+.cardNfEmitidaDash {
+  display: flex;
+  width: 80%;
+  height: 150px;
+  padding: 24px;
+  flex-direction: column;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  background-color: #fff;
+  box-shadow: 1px 1px 3px 1px rgba(98, 98, 98, 0.25);
+  text-align: 'left';
+}
+
+.divOcupacao {
+  border-radius: 20px;
+  display: flex;
+  padding-left: 10px;
+  height: 190px;
+  padding-right: 10px;
+  background-color: #f2f2f2;
+  justify-content: center;
+}
+
+.divTotalNF {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-align: 'left';
+  gap: 20px;
+}
+
+.divTotalNFDash {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #f2f2f2;
+  display: flex;
+  width: 100%;
+  text-align: 'left';
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.insideOcupacao {
+  border-radius: 20px;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  align-items: center;
+  width: 120px;
+  justify-content: center;
+}
+
+.insideOcupacaoDis {
+  border-radius: 20px;
+  padding-left: 4px;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  align-items: center;
+  width: 120px;
+  justify-content: center;
+}
+
+.divSelects {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.labelConsultar {
+  padding-left: 15px;
+}
+
+span.MuiCircularProgress-root.MuiCircularProgress-determinate.MuiCircularProgress-colorPrimary.css-uzfaaj-MuiCircularProgress-root {
+  width: 70px !important;
+  height: 70px !important;
+}
+
+.btnLimparFiltro {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-right: 15px;
+}
+
+.footerPage {
+  text-align: center;
+  background-color: #f2f2f2;
+  color: black;
+}
+
+.principal {
+  background-color: #f2f2f2;
+  min-height: 100vh;
+}
+
+@media (max-width: 870px) {
+  .divConsultar {
+    padding-bottom: 15px;
+  }
+  .divGeral {
+    display: ruby-text;
+  }
+  .divTotal {
+    padding-top: 10px;
+    background-color: #f2f2f2;
+    display: flex;
+  }
+  .divOcupacao {
+    display: flex;
+    height: 108px;
+  }
+}
+
+@media (max-width: 615px) {
+  .divGeral {
+    display: ruby-text;
+  }
+  .divTotal {
+    padding-top: 10px;
+    background-color: #f2f2f2;
+    display: flex;
+  }
+  .divOcupacao {
+    display: flex;
+    height: 108px;
+  }
+  .insideOcupacao {
+    width: 250px;
+  }
+  .insideOcupacaoDis {
+    width: 250px;
+  }
+  .divOcupado {
+    width: 250px;
+  }
+  .divdisponivel {
+    width: 250px;
+  }
+}

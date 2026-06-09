@@ -1,0 +1,11 @@
+#GraficoPizza {
+  width: 320px !important;
+  height: 160px !important;
+}
+
+@media (max-width: 480px) {
+  #GraficoPizza {
+    width: 220px !important;
+    height: 160px !important;
+  }
+}

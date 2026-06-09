@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+  }
+
+  
+  .header {
+    align-items: center;
+    position: relative;
+    padding-left: 50px;
+    padding-top: 15px;
+  }
+  
+  .imgAmvox{
+    width: 150px;
+    height: 100px;
+  }

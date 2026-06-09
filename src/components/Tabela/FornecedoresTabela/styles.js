@@ -1,0 +1,45 @@
+import styled from 'styled-components';
+
+export const Button = styled.button`
+  background-color: #424242;
+  background-color: ${(props) =>
+    props.backgroundColorBlack ? '#000000' : '#424242'};
+  border: 1px solid red;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+  height: 100%;
+
+  p {
+    color: #fff !important;
+  }
+
+  &:hover {
+    background-color: #000;
+  }
+`;
+
+
+
+export const Buttonth = styled.button`
+  background-color: #212529;
+  color: #c59600;
+  border: none;
+  font-weight: bold;
+`;
+
+export const DadosFornecedorStyle = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 0.5rem;
+  align-items: center;
+
+  img {
+    width: 1.5rem;
+  }
+`;

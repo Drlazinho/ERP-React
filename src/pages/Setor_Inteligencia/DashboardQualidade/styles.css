@@ -1,0 +1,41 @@
+.imgAmvox {
+  width: 150px;
+  height: 85px;
+}
+
+.boxSelects {
+  display: flex;
+  width: 100%;
+  align-content: flex-end;
+}
+
+.boxCards {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.footerPagePrincipal {
+  text-align: center;
+  background-color: #000000;
+  color: #fff;
+  display: flex;
+  font-family: Poppins, sans-serif;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  height: 100%;
+}
+
+.principal {
+  background-color: #f3f4f6;
+  min-height: 100vh;
+  color: black;
+}
+
+@media (max-width: 870px) {
+  .footerPagePrincipal {
+    flex-direction: column;
+  }
+}

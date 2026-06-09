@@ -1,0 +1,27 @@
+.imgAmvox {
+  width: 150px;
+  height: 85px;
+}
+
+.footerPagePrincipal {
+  text-align: center;
+  background-color: #000000;
+  color: #fff;
+  display: flex;
+  font-family: Poppins, sans-serif;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  height: 100%;
+}
+
+.footerPage {
+  text-align: center;
+  color: black;
+}
+
+.principal {
+  background-color: #f3f4f6;
+  min-height: 100vh;
+  color: black;
+}

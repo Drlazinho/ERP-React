@@ -1,0 +1,66 @@
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+body {
+  font-family: 'open sans', sans-serif;
+  font-size: 16px;
+}
+
+.principal {
+  background-color: #f2f2f2;
+  min-height: 100vh;
+}
+
+.tituloPri {
+  display: flex;
+  align-items: center;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  padding-left: 10px;
+}
+
+.imgAmvox {
+  width: 150px;
+  height: 100px;
+}
+
+.divGeralNotasEmitidas {
+  padding: 40px;
+  margin-bottom: -20px;
+  margin-top: -20px;
+}
+
+.divConsultarNotasFiscais {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  background-color: white;
+  width: 100%;
+  height: 100px;
+  box-shadow: 1px 1px 3px 1px rgb(0 0 0 / 0.25);
+  padding: 20px;
+}
+
+@media (max-width: 1000px) {
+  .divConsultarNotasFiscais {
+    flex-wrap: wrap;
+    height: auto;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 515px) {
+  .divTitulo {
+    flex-direction: column;
+    margin-bottom: 24px;
+  }
+}

@@ -1,0 +1,12 @@
+.compactTable {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.tabelaAgendamentoCarga {
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: black;
+  align-items: center;
+}

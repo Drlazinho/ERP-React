@@ -1,0 +1,8 @@
+td {
+  font-size: 14px;
+}
+
+.config-text {
+  text-align: start;
+  white-space: normal !important;
+}

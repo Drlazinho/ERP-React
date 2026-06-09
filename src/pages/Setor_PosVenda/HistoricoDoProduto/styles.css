@@ -1,0 +1,126 @@
+.imgAmvox {
+  width: 150px;
+  height: 100px;
+}
+
+.footerPage {
+  text-align: center;
+  background-color: #f2f2f2;
+  color: black;
+  opacity: 80%;
+}
+
+.principalProdutoForaLinha {
+  background-color: #f2f2f2;
+  min-height: 100vh;
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 30px;
+  padding-left: 10px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.logoAmvox {
+}
+
+.divFiltros {
+  border-radius: 20px;
+  display: flex;
+  padding-left: 30px;
+  height: 120px;
+  /* padding-right: 10px; */
+  background-color: #f2f2f2;
+  color: black;
+  justify-content: space-between;
+  width: 100%;
+  padding-right: 30px;
+}
+
+.insideFiltros {
+  border-radius: 20px;
+  display: flex;
+  background-color: white;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  padding: 20px;
+}
+
+.tabelaForaLinha {
+  display: flex;
+  padding-left: 30px;
+  padding-top: 30px;
+  color: black;
+  padding-right: 30px;
+  align-items: center;
+}
+
+.divDesc {
+  padding-right: 70px;
+}
+
+.divData {
+  display: flex;
+
+  padding-right: 50px;
+  gap: 10px;
+}
+.divSelect {
+  padding-right: 15px;
+}
+
+.card_selecionado_protocolo_notas {
+  background: rgb(23, 107, 190);
+  background: linear-gradient(
+    0deg,
+    rgb(22, 99, 177) 40%,
+    rgb(48, 135, 221) 100%
+  );
+}
+
+@media (max-width: 870px) {
+  .divConsultar {
+    padding-bottom: 15px;
+  }
+  .divTotal {
+    padding-top: 10px;
+    background-color: #f2f2f2;
+    display: flex;
+  }
+  .divOcupacao {
+    display: flex;
+    height: 108px;
+  }
+}
+
+@media (max-width: 615px) {
+  .divGeral {
+    display: ruby-text;
+  }
+  .divOcupacao {
+    display: flex;
+    height: 108px;
+  }
+  .insideOcupacao {
+    width: 250px;
+  }
+  .insideOcupacaoDis {
+    width: 250px;
+  }
+}

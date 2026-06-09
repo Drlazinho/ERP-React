@@ -1,0 +1,137 @@
+
+@media print {
+    @page {
+        margin-left: 15mm;
+        margin-right: 15mm;
+    }
+}
+
+* {
+    margin: 0;
+}
+.notaArea{
+    background-color: rgb(255, 255, 255) !important;
+}
+
+.notaArea.page {
+    width: 18cm;
+    position: relative;
+    font-family: "open sans",sans-serif;
+    color: #000;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.notaArea .font-12 {
+    font-size: 12pt;
+}
+
+.notaArea .font-8 {
+    font-size: 8pt;
+}
+
+.notaArea .bold {
+    font-weight: bold;
+}
+/* == TABELA == */
+.notaArea .txt-upper {
+    text-transform: uppercase;
+}
+
+.notaArea .txt-center {
+    text-align: center;
+}
+
+.notaArea .txt-right {
+    text-align: right;
+}
+
+.notaArea .nota-label {
+    text-transform: uppercase;
+    margin-bottom: 3px;
+    display: block;
+}
+
+.notaArea .info {
+    font-weight: bold;
+    font-size: 8pt;
+    display: block;
+    line-height: 1.1em;
+}
+
+.notaArea table {
+    font-family: "open sans",sans-serif;
+    color: #111010 !important;
+    font-size: 7.5pt;
+    -webkit-font-smoothing: antialiased;
+    border-collapse: collapse !important;
+    width: 100%;
+    border-color: #080808 !important;
+    border-radius: 5px;
+}
+
+.notaArea .no-top {
+    margin-top: -1px;
+}
+
+.notaArea .valign-middle {
+    vertical-align: middle;
+}
+
+.notaArea td {
+    vertical-align: middle;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: #080808 !important;
+    padding: 1px;
+    height: 5mm;
+}
+
+.notaArea .tserie {
+    width: 32.2mm;
+    vertical-align: middle;
+    font-size: 8pt;
+    font-weight: bold;
+}
+
+    .notaArea .tserie span {
+        display: block;
+    }
+
+.notaArea .hr-dashed {
+    border: none;
+    border-top: 1.5px dashed #000000 !important;
+    margin: 5px 0;
+}
+.notaArea .hr-line{
+border-top: 1.6px solid rgb(0, 0, 0) !important;
+width: 200mm;
+position: relative;
+}
+
+.notaArea .amvox_logo {
+    height: 10mm;
+    width: 20mm;
+    margin: 0.4mm;
+}
+
+.notaArea .title {
+    font-size: 10pt;
+    margin-bottom: 2mm;
+}
+
+.notaArea table table {
+    margin: -1pt;
+    width: 100.5%;
+}
+
+.page .boxFields td p {
+    font-family: "open sans",sans-serif;
+    font-size: 5pt;
+    line-height: 1.2em;
+}
+
+.notaArea .greyContrast {
+    background-color: rgb(209, 209, 209) !important;
+}

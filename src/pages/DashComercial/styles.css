@@ -1,0 +1,76 @@
+.boxGeral {
+  display: flex;
+  padding-left: 40px;
+  padding-right: 40px;
+  color: black;
+}
+
+.tickerTape {
+  width: 100%;
+  padding: 0;
+  height: 42px;
+  box-sizing: border-box;
+}
+
+.footerPagePrincipal {
+  text-align: center;
+  background-color: #000000;
+  color: #fff;
+  display: flex;
+  font-family: Poppins, sans-serif;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.cardReceita {
+  display: flex;
+  padding: 20px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.25);
+}
+
+.principal {
+  background-color: #f3f4f6;
+  min-height: 100vh;
+  color: black;
+}
+
+.cards {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+}
+
+@media (max-width: 870px) {
+  .boxGeral {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .cardReceita {
+    flex: 1 1 100%;
+    min-width: 0;
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+
+  .footerPagePrincipal {
+    flex-direction: column;
+  }
+
+  .tabelaDashComercial {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .cardGrafico {
+    width: 100% !important;
+    height: 300px;
+    padding: 12px;
+  }
+}

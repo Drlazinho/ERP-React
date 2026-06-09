@@ -1,0 +1,9 @@
+.MuiTableRow-root:hover {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.MuiTableRow-root:hover .MuiTableCell-root {
+  color: #000 !important;
+  background-color: #fff !important;
+}
